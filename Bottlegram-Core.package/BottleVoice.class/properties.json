@@ -6,15 +6,12 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"id",
-		"from",
-		"date",
-		"chat",
-		"text",
-		"bot",
-		"photos",
-		"voice"
+		"fileId",
+		"fileUniqueId",
+		"duration",
+		"fileSize",
+		"mimeType"
 	],
-	"name" : "BottleMessage",
+	"name" : "BottleVoice",
 	"type" : "normal"
 }

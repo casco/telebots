@@ -14,6 +14,10 @@ new: aJSONMessage bot: aBot
 	aMessage text: (aJSONMessage at: 'text' ifAbsent: [ '' ]).
 	aMessage photos: (BottlePhoto fromAll:
 			 (aJSONMessage at: 'photo' ifAbsent: [ Array new ])).
+	aMessage voice: (aJSONMessage
+			 at: 'voice'
+			 ifPresent: [ :it | BottleVoice from: it ]
+			 ifAbsent: [ nil ]).
 	aMessage date: (aJSONMessage at: 'date').
 	aMessage id: (aJSONMessage at: 'message_id').
 	aMessage bot: aBot.
