@@ -9,7 +9,7 @@ new: aJSONMessage bot: aBot
 	aMessage:= self new.
 	aMessage from: aUser.
 	aMessage chat: aChat.
-	aMessage text: (aJSONMessage at:'text').
+	aMessage text: (aJSONMessage at:'text' ifAbsent: ['']).
 	aMessage date: (aJSONMessage at:'date').
 	aMessage id: (aJSONMessage at:'message_id').
 	aMessage bot: aBot.
