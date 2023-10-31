@@ -12,7 +12,7 @@ Bottlegram is a tool for creating telegram Bots with Pharo. This library provide
 ```smalltalk
 Metacello new
   baseline: #Bottlegram;
-  repository: 'github://pablo1n7/bottlegram';
+  repository: 'github://casco/pharogram';
   load.
 ```
 
