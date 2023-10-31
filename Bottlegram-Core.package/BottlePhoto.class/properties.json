@@ -7,13 +7,11 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"id",
-		"from",
-		"date",
-		"chat",
-		"text",
-		"bot",
-		"photos"
+		"fileUniqueId",
+		"height",
+		"width",
+		"fileSize"
 	],
-	"name" : "BottleMessage",
+	"name" : "BottlePhoto",
 	"type" : "normal"
 }
