@@ -1,10 +1,12 @@
 system startup
-startBotPulling: aSecond
-	"comment stating purpose of instance-side message"
-	"scope: class-variables  &  instance-variables"	
-	|processBlock|
-	self getUpdates:true.
-	processBlock :=[self getUpdates:true do:[:each| self handleMessage: each.].
-							 (Delay forDuration: (Duration seconds: aSecond)) wait]. 
-	self processFork: [processBlock repeat] fork.
-	^self
+startBotPulling: seconds
+
+	| processBlock |
+	self getUpdates: true.
+	processBlock := [ 
+	                self
+		                getUpdates: true
+		                do: [ :each | self handleMessage: each ].
+	                (Delay forDuration: (Duration seconds: seconds)) wait ].
+	self processFork: [ processBlock repeat ] fork.
+	^ self
