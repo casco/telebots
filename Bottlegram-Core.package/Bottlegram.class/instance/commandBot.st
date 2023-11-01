@@ -1,3 +1,0 @@
-accessing
-commandBot
-	^ commandBot

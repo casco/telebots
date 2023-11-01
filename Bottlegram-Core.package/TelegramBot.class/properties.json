@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Bottlegram-Core",
+	"classinstvars" : [
+		"initialize"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"baseURL",
+		"botID",
+		"lastMessage",
+		"processFork",
+		"lastUpdate",
+		"webhook",
+		"port",
+		"teapot"
+	],
+	"name" : "TelegramBot",
+	"type" : "normal"
+}
