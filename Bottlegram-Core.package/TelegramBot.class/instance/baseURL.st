@@ -1,3 +1,3 @@
 accessing
 baseURL
-	^ baseURL
+	^ 'https://api.telegram.org/bot', botID

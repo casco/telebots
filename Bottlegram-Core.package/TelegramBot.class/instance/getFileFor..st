@@ -1,4 +1,4 @@
-action
+files
 getFileFor: aBottleVoiceOrPhoto
 
 	| result |

@@ -6,7 +6,7 @@ voiceReadStream
 
 	realFileDescription := ZnClient new
 		                       url:
-			                       self bot baseURL , '/getFile?file_id='
+			                       self bot baseURL  , '/getFile?file_id='
 			                       , voice fileId;
 		                       accept: ZnMimeType applicationJson;
 		                       get.
@@ -17,7 +17,7 @@ voiceReadStream
 
 
 	znClient := ZnClient new
-		            url: self bot baseURL , '/' , path;
+		            url: self bot baseFileURL , '/' , path;
 		            beBinary;
 		            streaming: true.
 
