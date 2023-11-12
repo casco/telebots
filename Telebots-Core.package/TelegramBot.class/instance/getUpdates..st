@@ -3,7 +3,7 @@ getUpdates: onlyLast
 
 	| updateSpecs updates builder |
 	updateSpecs := (self sendGET:
-		                '/getUpdates?offset=' , self lastUpdate printString) 
+		                '/getUpdates?offset=' , (self lastUpdate + 1) printString) 
 		               at: 'result'.
 
 	builder := self updateBuilderClass new.
