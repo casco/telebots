@@ -1,0 +1,4 @@
+hooks
+updateBuilderClass
+
+	^ UpdateBuilder

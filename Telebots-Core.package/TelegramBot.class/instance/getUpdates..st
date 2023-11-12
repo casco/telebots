@@ -6,7 +6,7 @@ getUpdates: onlyLast
 		                '/getUpdates?offset=' , self lastUpdate printString) 
 		               at: 'result'.
 
-	builder := UpdateBuilder new.
+	builder := self updateBuilderClass new.
 	builder bot: self.
 	updates := updateSpecs collect: [ :aSpec | 
 		           builder

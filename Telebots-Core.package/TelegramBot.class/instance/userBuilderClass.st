@@ -1,0 +1,4 @@
+hooks
+userBuilderClass
+
+	^ UserBuilder
