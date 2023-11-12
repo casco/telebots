@@ -6,11 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"id",
-		"type",
-		"description",
-		"title"
+		"updateId",
+		"rawSpec"
 	],
-	"name" : "TelegramChat",
+	"name" : "TelegramUpdate",
 	"type" : "normal"
 }

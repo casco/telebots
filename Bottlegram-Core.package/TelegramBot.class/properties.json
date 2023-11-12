@@ -14,7 +14,9 @@
 		"lastUpdate",
 		"webhook",
 		"port",
-		"teapot"
+		"teapot",
+		"users",
+		"chats"
 	],
 	"name" : "TelegramBot",
 	"type" : "normal"

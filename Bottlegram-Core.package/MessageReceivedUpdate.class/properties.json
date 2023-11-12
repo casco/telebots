@@ -1,16 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "TelegramUpdate",
 	"category" : "Bottlegram-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"id",
-		"type",
-		"description",
-		"title"
+		"message"
 	],
-	"name" : "TelegramChat",
+	"name" : "MessageReceivedUpdate",
 	"type" : "normal"
 }

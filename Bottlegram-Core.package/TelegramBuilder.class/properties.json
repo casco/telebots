@@ -6,11 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"id",
-		"type",
-		"description",
-		"title"
+		"spec",
+		"bot"
 	],
-	"name" : "TelegramChat",
+	"name" : "TelegramBuilder",
 	"type" : "normal"
 }

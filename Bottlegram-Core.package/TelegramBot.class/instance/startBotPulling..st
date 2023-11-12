@@ -6,7 +6,7 @@ startBotPulling: seconds
 	processBlock := [ 
 	                self
 		                getUpdates: true
-		                do: [ :each | self handleMessage: each ].
+		                do: [ :each | each getHandledBy: self ].
 	                (Delay forDuration: (Duration seconds: seconds)) wait ].
 	self processFork: [ processBlock repeat ] fork.
 	^ self

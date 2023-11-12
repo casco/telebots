@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"id",
-		"bot",
+		"firstname",
+		"lastname",
+		"isBot",
 		"username"
 	],
 	"name" : "TelegramUser",

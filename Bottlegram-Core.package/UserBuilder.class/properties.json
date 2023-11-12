@@ -1,16 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "TelegramBuilder",
 	"category" : "Bottlegram-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"id",
-		"type",
-		"description",
-		"title"
-	],
-	"name" : "TelegramChat",
+	"instvars" : [ ],
+	"name" : "UserBuilder",
 	"type" : "normal"
 }

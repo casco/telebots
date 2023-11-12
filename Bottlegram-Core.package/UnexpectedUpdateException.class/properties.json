@@ -1,16 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "Exception",
 	"category" : "Bottlegram-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"id",
-		"type",
-		"description",
-		"title"
+		"spec"
 	],
-	"name" : "TelegramChat",
+	"name" : "UnexpectedUpdateException",
 	"type" : "normal"
 }

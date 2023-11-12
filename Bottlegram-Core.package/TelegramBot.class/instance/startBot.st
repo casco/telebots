@@ -9,6 +9,7 @@ startBot
 								|response aMessages aMessage|
 								response := STONJSON fromString: (req entity string).
 								aMessages := response at:'message'.
+								self halt: 'This should be refactores using update objects - casco'.
 								aMessage := TelegramMessage new: aMessages bot:self.
 								self handleMessage: aMessage.];
 			 GET: '/' -> 'Bonjour!';
