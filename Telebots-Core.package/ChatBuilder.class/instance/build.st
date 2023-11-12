@@ -1,7 +1,7 @@
 building
 build
 
-	^ TelegramChat new
+	^ self newInstance
 		  id: (spec at: 'id');
 		  type: (spec at: 'type');
 		  title: (spec at: 'title' ifAbsent: [ nil ]);

@@ -1,0 +1,4 @@
+building
+newInstance
+
+	^ TelegramChat new
