@@ -3,18 +3,31 @@
   <img height="200" src="readme_assets/bottlegram_logo.jpg" alt="bottlegram for pharo logo">
 </p>
 
-# Bottlegram
+# Telebots
 
-Bottlegram is a tool for creating telegram Bots with Pharo. This library provides an interface for the [Telegram Bot API](https://core.telegram.org/bots/api).
+Telebots is a framework for creating telegram Bots with Pharo. This library provides an interface for the [Telegram Bot API](https://core.telegram.org/bots/api).
 
 ### Install
 
+To install only the polling implementation (default) use:
+
 ```smalltalk
 Metacello new
-  baseline: #Bottlegram;
-  repository: 'github://casco/pharogram';
+  baseline: #Telebots;
+  repository: 'github://casco/telebots';
   load.
 ```
+
+To install  the webhooked implementation use:
+
+```smalltalk
+Metacello new
+  baseline: #Telebots;
+  repository: 'github://casco/telebots';
+  load: 'webhooked'.
+```
+
+WHAT FOLLOWS NEEDS TO BE UPDATED
 
 ### Basic usage
 
