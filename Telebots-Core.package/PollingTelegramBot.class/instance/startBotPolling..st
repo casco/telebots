@@ -1,12 +1,11 @@
-system startup
-startBotPulling: seconds
+start-stop
+startBotPolling: seconds
 
 	| processBlock |
-	self getUpdates: true.
 	processBlock := [ 
 	                self
 		                getUpdates: true
-		                do: [ :each | each getHandledBy: self ].
+		                do: [ :anUpdate | anUpdate getHandledBy: self ].
 	                (Delay forDuration: (Duration seconds: seconds)) wait ].
 	self processFork: [ processBlock repeat ] fork.
 	^ self

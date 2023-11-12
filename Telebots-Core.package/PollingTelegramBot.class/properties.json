@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TelegramBot",
+	"category" : "Telebots-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"waitingTime"
+	],
+	"name" : "PollingTelegramBot",
+	"type" : "normal"
+}

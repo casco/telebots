@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TelegramBot",
+	"category" : "Telebots-Webhooked",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"webhook",
+		"port",
+		"teapot"
+	],
+	"name" : "WebhookedTelegramBot",
+	"type" : "normal"
+}

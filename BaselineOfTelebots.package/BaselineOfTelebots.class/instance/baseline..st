@@ -1,9 +1,15 @@
 baselines
 baseline: spec
+
 	<baseline>
-	spec
-		for: #common
-		do: [
-			self setUpDependencies: spec. 
-				spec package: 'Telebots-Core' with: [ spec requires: 'Teapot' ].
-		      spec package: 'Telebots-Example']
+	self declareDependenciesWith: spec.
+	spec for: #common do: [ 
+		spec
+			package: 'Telebots-Core';
+			package: 'Telebots-Example';
+			package: 'Telebots-Webhooked'
+			with: [ spec requires: #( 'Telebots-Core' 'Teapot' ) ].
+		spec
+			group: 'default' with: #( 'Telebots-Core' 'Telebots-Example' );
+			group: 'webhooked'
+			with: #( 'Telebots-Webhooked' 'Telebots-Example' ) ]

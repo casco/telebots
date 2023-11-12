@@ -12,9 +12,6 @@
 		"lastMessage",
 		"processFork",
 		"lastUpdate",
-		"webhook",
-		"port",
-		"teapot",
 		"users",
 		"chats"
 	],
