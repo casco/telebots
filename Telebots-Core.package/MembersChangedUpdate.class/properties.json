@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TelegramUpdate",
+	"category" : "Telebots-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "MembersChangedUpdate",
+	"type" : "normal"
+}

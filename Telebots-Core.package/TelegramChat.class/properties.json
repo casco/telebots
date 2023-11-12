@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Telebots-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"id",
+		"type",
+		"description",
+		"title"
+	],
+	"name" : "TelegramChat",
+	"type" : "normal"
+}

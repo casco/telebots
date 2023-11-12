@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TelegramBot",
+	"category" : "Telebots-Example",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "EchoBot",
+	"type" : "normal"
+}

@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Telebots-Core",
+	"classinstvars" : [
+		"initialize"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"botID",
+		"lastMessage",
+		"processFork",
+		"lastUpdate",
+		"webhook",
+		"port",
+		"teapot",
+		"users",
+		"chats"
+	],
+	"name" : "TelegramBot",
+	"type" : "normal"
+}

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Telebots-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fileId",
+		"fileUniqueId",
+		"duration",
+		"fileSize",
+		"mimeType"
+	],
+	"name" : "TelegramVoice",
+	"type" : "normal"
+}

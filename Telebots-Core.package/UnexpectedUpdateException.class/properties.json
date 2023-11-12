@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Exception",
+	"category" : "Telebots-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"spec"
+	],
+	"name" : "UnexpectedUpdateException",
+	"type" : "normal"
+}

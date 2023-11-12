@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "TelegramBuilder",
+	"category" : "Telebots-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "UpdateBuilder",
+	"type" : "normal"
+}

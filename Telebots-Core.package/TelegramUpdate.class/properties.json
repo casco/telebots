@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "Telebots-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"updateId",
+		"rawSpec"
+	],
+	"name" : "TelegramUpdate",
+	"type" : "normal"
+}
