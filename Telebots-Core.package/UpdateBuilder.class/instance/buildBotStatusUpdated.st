@@ -1,8 +1,8 @@
 building
-buildMyBotStatusUpdated
+buildBotStatusUpdated
 
 	| update  |
-	update := MyBotStatusUpdate new.
+	update := BotStatusUpdate new.
 	update updateId: (spec at: 'update_id').
 	update rawSpec: spec.
 	^ update
