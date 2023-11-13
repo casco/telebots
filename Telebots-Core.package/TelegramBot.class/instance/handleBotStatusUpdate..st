@@ -1,4 +1,4 @@
 update handling
 handleBotStatusUpdate: aBotStatusUpdate
 
-	Transcript show: 'New BotStatusUpdate received'
+	aBotStatusUpdate left | aBotStatusUpdate kicked ifTrue: [ chats := chats reject: [ :each | each title = aBotStatusUpdate chatTitle ] ]
