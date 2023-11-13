@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "TelegramBot",
+	"super" : "PollingTelegramBot",
 	"category" : "Telebots-Example",
 	"classinstvars" : [ ],
 	"pools" : [ ],

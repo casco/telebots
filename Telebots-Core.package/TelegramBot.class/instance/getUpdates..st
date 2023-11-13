@@ -12,7 +12,7 @@ getUpdates: onlyLast
 		           builder
 			           spec: aSpec;
 			           build ].
-	updates ifNotEmpty: [ self lastUpdate: updates last updateId ].
+	updates ifNotEmpty: [ self lastUpdate: updates last updateId asNumber ].
 
 	onlyLast ifTrue: [ updates := self filterUpdates: updates ].
 	^ updates
