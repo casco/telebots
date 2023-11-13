@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "BotStatusUpdate",
+	"name" : "BotMemberStatusUpdate",
 	"type" : "normal"
 }

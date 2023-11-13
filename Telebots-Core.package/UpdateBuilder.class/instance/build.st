@@ -8,5 +8,5 @@ build
 		^ self buildMessageReceivedUpdate ].
 	spec
 		at: 'my_chat_member'
-		ifPresent: [ ^ self buildBotStatusUpdated ].
+		ifPresent: [ ^ self buildBotMemberStatusUpdated ].
 	(UnexpectedUpdateException with: spec) signal
