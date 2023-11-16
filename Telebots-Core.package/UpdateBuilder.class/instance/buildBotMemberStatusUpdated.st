@@ -1,8 +1,7 @@
 building
 buildBotMemberStatusUpdated
 
-	| update  |
-	update := BotMemberStatusUpdate new.
-	update updateId: (spec at: 'update_id').
-	update rawSpec: spec.
-	^ update
+	result ifNotNil: [ self error: 'This should not happen' ].
+	result := BotMemberStatusUpdate new.
+	result updateId: (spec at: 'update_id').
+	result rawSpec: spec

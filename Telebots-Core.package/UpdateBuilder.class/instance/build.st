@@ -4,9 +4,10 @@ build
 	spec at: 'message' ifPresent: [ 
 		(spec at: 'message')
 			at: 'new_chat_member'
-			ifPresent: [ ^ self buildMembersChangedUpdate ].
-		^ self buildMessageReceivedUpdate ].
+			ifPresent: [ self buildMembersChangedUpdate ]
+			ifAbsent: [ self buildMessageReceivedUpdate ] ].
 	spec
 		at: 'my_chat_member'
-		ifPresent: [ ^ self buildBotMemberStatusUpdated ].
+		ifPresent: [ self buildBotMemberStatusUpdated ].
+		
 	(UnexpectedUpdateException with: spec) signal
