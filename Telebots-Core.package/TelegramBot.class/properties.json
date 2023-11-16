@@ -13,7 +13,8 @@
 		"processFork",
 		"lastUpdate",
 		"users",
-		"chats"
+		"chats",
+		"elephantMemory"
 	],
 	"name" : "TelegramBot",
 	"type" : "normal"

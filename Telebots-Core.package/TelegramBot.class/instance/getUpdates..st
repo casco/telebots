@@ -17,4 +17,5 @@ getUpdates: onlyLast
 		self lastUpdate: updates last updateId asNumber ].
 
 	onlyLast ifTrue: [ updates := self filterUpdates: updates ].
+	self hasElephantMemory ifTrue: [ elephantMemory addAll: updates ].
 	^ updates

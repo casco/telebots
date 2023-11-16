@@ -5,5 +5,5 @@ new: aBotID
 	bot botID: aBotID.
 	bot checkBot.
 	bot lastMessage: 0.
-	bot lastUpdate: '0'.
+	bot lastUpdate: 0.
 	^ bot
