@@ -2,6 +2,7 @@ start-stop
 startBotPolling: seconds
 
 	| processBlock |
+	self updateMe.	
 	processBlock := [ 
 	                self
 		                getUpdates: true

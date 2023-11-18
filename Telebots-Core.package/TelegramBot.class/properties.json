@@ -9,6 +9,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"botID",
+		"me",
 		"lastMessage",
 		"processFork",
 		"lastUpdate",
