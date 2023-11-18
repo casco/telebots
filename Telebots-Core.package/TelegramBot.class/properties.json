@@ -8,7 +8,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"botID",
+		"token",
 		"me",
 		"lastMessage",
 		"processFork",

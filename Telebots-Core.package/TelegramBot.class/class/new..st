@@ -1,8 +1,8 @@
 instance creation
-new: aBotID
+new: aTelegramToken
 	| bot |
 	bot := self new.
-	bot botID: aBotID.
+	bot token: aTelegramToken.
 	bot checkBot.
 	bot lastMessage: 0.
 	bot lastUpdate: 0.
