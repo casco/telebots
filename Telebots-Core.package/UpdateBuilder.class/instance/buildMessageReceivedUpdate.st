@@ -17,6 +17,7 @@ buildMessageReceivedUpdate
 	msg from: user.
 	msg chat: chat.
 	msg text: (msgSpec at: 'text' ifAbsent: [ '' ]).
+	msg mentions: (self getMentionsForm: msgSpec ).
 	msg photos:
 		(TelegramPhoto fromAll:
 			 (msgSpec at: 'photo' ifAbsent: [ Array new ])).
@@ -27,4 +28,5 @@ buildMessageReceivedUpdate
 	msg date: (msgSpec at: 'date').
 	msg id: (msgSpec at: 'message_id').
 	msg bot: bot.
-	result message: msg
+	result message: msg.
+	result rawSpec: spec
