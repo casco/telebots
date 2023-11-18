@@ -13,7 +13,8 @@
 		"text",
 		"bot",
 		"photos",
-		"voice"
+		"voice",
+		"mentions"
 	],
 	"name" : "TelegramMessage",
 	"type" : "normal"
