@@ -1,6 +1,6 @@
 building
 build
-
+   result := nil.
 	spec at: 'message' ifPresent: [ 
 		(spec at: 'message')
 			at: 'new_chat_member'
@@ -13,5 +13,4 @@ build
 	spec at: 'my_chat_member' ifPresent: [ 
 		self buildBotMemberStatusUpdated.
 		^ self ].
-
-	result ifNil: [ (UnexpectedUpdateException with: spec) signal ]
+	result := UnknownUpdate new rawSpec: spec
