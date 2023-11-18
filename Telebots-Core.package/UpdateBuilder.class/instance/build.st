@@ -1,15 +1,8 @@
 building
 build
-   result := nil.
-	spec at: 'message' ifPresent: [ 
-		(spec at: 'message')
-			at: 'new_chat_member'
-			ifPresent: [ 
-				self buildMembersChangedUpdate.
-				^ self ]
-			ifAbsent: [ 
-				self buildMessageReceivedUpdate.
-				^ self ] ].
+
+	result := nil.
+	spec at: 'message' ifPresent: [ ^ self buildMessageBasedUpdate ].
 	spec at: 'my_chat_member' ifPresent: [ 
 		self buildBotMemberStatusUpdated.
 		^ self ].

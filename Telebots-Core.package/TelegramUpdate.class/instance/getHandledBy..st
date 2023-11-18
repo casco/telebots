@@ -1,4 +1,4 @@
 double dispatch
 getHandledBy: aBot
 
-   self subclassResponsibility 
+   aBot handleMembersLeftUpdate: self
