@@ -2,7 +2,7 @@ private
 getMentionsForm: msgSpec
 
 	| mentionEntities |
-	mentionEntities := (msgSpec at: 'entities') select: [ :each | 
+	mentionEntities := (msgSpec at: 'entities' ifAbsent: [Set new]) select: [ :each | 
 		                   (each at: 'type') = 'mention' ].
 	^ mentionEntities collect: [ :mention | 
 		  ((msgSpec at: 'text')
