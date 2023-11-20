@@ -1,0 +1,12 @@
+users-chats
+getChatAdminsFor: aChat
+
+	| response |
+	response := self sendGET:
+		            '/getChatAdministrators?chat_id=' , aChat id printString.
+	(response at: 'ok') ifFalse: [ ^ nil ].
+	^ (response at: 'result') collect: [ :spec | 
+		  UserBuilder new
+			  spec: spec;
+			  build;
+			  result ]
