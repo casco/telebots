@@ -6,5 +6,5 @@ handleMessageReceivedUpdate: aMessageReceivedUpdate
 	msg voice ifNotNil: [ ^ self handleVoiceMessage: msg ].
 	msg photos ifNotEmpty: [ ^ self handlePhotoMessage: msg ].
 	msg text trimBoth ifNotEmpty: [ :it | 
-		it first = $/ ifTrue: [ ^ self handleCommand: it in: msg ] ].
+		it first = $/ ifTrue: [ ^ self handleCommandIn: msg ] ].
 	self handleTextMessage: msg
