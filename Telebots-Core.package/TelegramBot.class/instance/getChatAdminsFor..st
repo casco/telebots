@@ -7,6 +7,6 @@ getChatAdminsFor: aChat
 	(response at: 'ok') ifFalse: [ ^ nil ].
 	^ (response at: 'result') collect: [ :spec | 
 		  UserBuilder new
-			  spec: spec;
+			  spec: (spec at: 'user');
 			  build;
 			  result ]

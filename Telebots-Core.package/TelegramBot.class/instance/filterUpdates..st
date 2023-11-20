@@ -3,7 +3,7 @@ filterUpdates: aColectioOfUpdates
 
 	| filteredCollection |
 	filteredCollection := aColectioOfUpdates select: [ :each | 
-		                      each updateId > self lastMessage ].
+		                      each updateId > lastMessage ].
 	filteredCollection ifNotEmpty: [ 
-		self lastMessage: filteredCollection last updateId ].
+		lastMessage := filteredCollection last updateId ].
 	^ filteredCollection
