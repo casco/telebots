@@ -6,4 +6,6 @@ build
 	spec at: 'my_chat_member' ifPresent: [ 
 		self buildBotMemberStatusUpdated.
 		^ self ].
-	result := UnknownUpdate new rawSpec: spec
+	result := UnknownUpdate new 
+		          updateId: (spec at: 'update_id');
+		          rawSpec: spec
