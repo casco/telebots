@@ -4,7 +4,7 @@ handleVoiceMessage: aMessage
 	| fileReference |
 	fileReference := 'temp-audio.oga' asFileReference.
 	fileReference binaryWriteStream
-		nextPutAll: aMessage voiceReadStream contents;
+		nextPutAll: (aMessage voice readStreamWith: self) contents;
 		close.
 	aMessage answer: 'Sorry, I do not speak human.'.
 	aMessage answer:
