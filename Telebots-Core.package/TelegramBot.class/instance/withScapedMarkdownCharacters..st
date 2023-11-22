@@ -2,5 +2,5 @@ utility
 withScapedMarkdownCharacters: aString
 
 	^ aString
-		  copyWithRegex: '\_|\-|\*'
+		  copyWithRegex: '\_|\*'
 		  matchesTranslatedUsing: [ :each | '\' , each ]

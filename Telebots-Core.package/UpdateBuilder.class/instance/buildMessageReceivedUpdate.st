@@ -22,8 +22,10 @@ buildMessageReceivedUpdate
 	msg photos:
 		(TelegramPhoto fromAll:
 			 (msgSpec at: 'photo' ifAbsent: [ Array new ])).
-	msg document: (TelegramDocument from:
-			 (msgSpec at: 'document' ifAbsent: [ Array new ])).
+	msg document: (msgSpec
+			 at: 'document'
+			 ifPresent: [ :it | TelegramDocument from: it ]
+			 ifAbsent: [ nil ]).
 	msg voice: (msgSpec
 			 at: 'voice'
 			 ifPresent: [ :it | TelegramVoice from: it ]
