@@ -1,4 +1,4 @@
 accessing
 fileUniqueId: anObject
 
-	fileUniqueId := anObject
+	fileUniqueId := anObject 

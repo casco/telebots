@@ -1,4 +1,4 @@
 accessing
 fileSize: anObject
 
-	fileSize := anObject
+	fileSize := anObject 

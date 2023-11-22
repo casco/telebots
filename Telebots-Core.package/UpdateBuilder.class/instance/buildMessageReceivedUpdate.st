@@ -17,10 +17,13 @@ buildMessageReceivedUpdate
 	msg from: user.
 	msg chat: chat.
 	msg text: (msgSpec at: 'text' ifAbsent: [ '' ]).
-	msg mentions: (self getMentionsForm: msgSpec ).
+	msg caption: (msgSpec at: 'caption' ifAbsent: [ nil ]).
+	msg mentions: (self getMentionsForm: msgSpec).
 	msg photos:
 		(TelegramPhoto fromAll:
 			 (msgSpec at: 'photo' ifAbsent: [ Array new ])).
+	msg document: (TelegramDocument from:
+			 (msgSpec at: 'document' ifAbsent: [ Array new ])).
 	msg voice: (msgSpec
 			 at: 'voice'
 			 ifPresent: [ :it | TelegramVoice from: it ]

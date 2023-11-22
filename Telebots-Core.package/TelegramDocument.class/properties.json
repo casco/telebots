@@ -6,9 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"height",
-		"width"
+		"thumbnail",
+		"fileName",
+		"mimeType"
 	],
-	"name" : "TelegramPhoto",
+	"name" : "TelegramDocument",
 	"type" : "normal"
 }

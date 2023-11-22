@@ -6,18 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"id",
-		"from",
-		"date",
-		"chat",
-		"text",
-		"bot",
-		"photos",
-		"voice",
-		"mentions",
-		"caption",
-		"document"
+		"fileId",
+		"fileSize",
+		"fileUniqueId"
 	],
-	"name" : "TelegramMessage",
+	"name" : "TelegramFile",
 	"type" : "normal"
 }
