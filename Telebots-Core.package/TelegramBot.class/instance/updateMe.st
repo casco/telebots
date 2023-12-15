@@ -1,7 +1,7 @@
 initialization
 updateMe
 
-	me := UserBuilder new
+	me := self userBuilderClass new
 		      spec: ((self sendGET: '/getMe') at: 'result');
 		      build;
 		      result
