@@ -1,10 +1,8 @@
 as yet unclassified
-sendChatMessage: aMessageText withInlineButtons: inlineKeyboardButtons to: aChat
+sendChatMessage: aMessageText withInlineKeyboard: inlineKeyboard to: aChat
 
-	| dict inlineKeyboard |
+	| dict  |
 	dict := Dictionary new.
-	inlineKeyboard := TelegramInlineKeyboard new. 
-	inlineKeyboard 	buttons: inlineKeyboardButtons.
 	dict
 		at: 'chat_id' put: aChat id printString;
 		at: 'parse_mode' put: 'Markdown';
