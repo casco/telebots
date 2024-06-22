@@ -14,7 +14,7 @@ readStreamForFileId: aFileId
 
 
 	znClient := ZnClient new
-		            url: self fileDownloadURL , '/' , path;
+		            url: self baseFileURL , '/' , path;
 		            beBinary;
 		            streaming: true.
 
